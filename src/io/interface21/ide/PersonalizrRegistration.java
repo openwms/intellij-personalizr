@@ -27,11 +27,11 @@ import org.jetbrains.annotations.NotNull;
  * @version 1.0
  * @since 1.0
  */
-public class MyPluginRegistration implements ApplicationComponent {
+public class PersonalizrRegistration implements ApplicationComponent {
     // Returns the component name (any unique string value).
     @NotNull
     public String getComponentName() {
-        return "MyPlugin";
+        return "Personalizr";
     }
 
 
@@ -39,10 +39,10 @@ public class MyPluginRegistration implements ApplicationComponent {
     // the plugin.xml file, this method is called on IDEA start-up.
     public void initComponent() {
         ActionManager am = ActionManager.getInstance();
-        TextBoxes action = new TextBoxes();
+        PersonalizrAction action = new PersonalizrAction();
 
         // Passes an instance of your custom TextBoxes class to the registerAction method of the ActionManager class.
-        am.registerAction("MyPluginAction", action);
+        am.registerAction("PersonalizrAction", action);
 
         // Gets an instance of the WindowMenu action group.
         DefaultActionGroup windowM = (DefaultActionGroup) am.getAction("WindowMenu");

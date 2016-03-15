@@ -32,14 +32,14 @@
     <!-- Add your actions here -->
     <group id="MyPlugin.SampleMenu" text="_Sample Menu" description="Sample menu">
       <add-to-group group-id="MainMenu" anchor="last"  />
-      <action id="Myplugin.Textboxes" class="io.interface21.ide.TextBoxes" text="Text _Boxes" description="A test menu item" />
+      <action id="Myplugin.Textboxes" class="io.interface21.ide.PersonalizrAction" text="Text _Boxes" description="A test menu item" />
     </group>
   </actions>
 
   <application-components>
     <!-- Add your application components here -->
     <component>
-      <implementation-class>io.interface21.ide.MyPluginRegistration</implementation-class>
+      <implementation-class>io.interface21.ide.PersonalizrRegistration</implementation-class>
     </component>
   </application-components>
 </idea-plugin>

@@ -28,13 +28,13 @@ import com.intellij.openapi.ui.Messages;
  * @version 1.0
  * @since 1.0
  */
-public class TextBoxes extends AnAction {
+public class PersonalizrAction extends AnAction {
     // If you register the action from Java code, this constructor is used to set the menu item name
     // (optionally, you can specify the menu description and an icon to display next to the menu item).
     // You can omit this constructor when registering the action in the plugin.xml file.
-    public TextBoxes() {
+    public PersonalizrAction() {
         // Set the menu item name.
-        super("Text _Boxes");
+        super("Personalizr");
         // Set the menu item name, description and icon.
         // super("Text _Boxes","Item description",IconLoader.getIcon("/Mypackage/icon.png"));
     }
